@@ -1,0 +1,60 @@
+
+.parallax {
+    /* The image used */
+    background-image: url("https://i.postimg.cc/6Q2sG94R/j.jpg");
+  
+    /* Set a specific height */
+    min-height: 600px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.row{
+    background-color:#f499a1 ;
+    /* background-color: #FE828C; */
+    box-shadow: 2px 2px 5px gray;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+h6{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.btn{
+    background-color: rgb(235, 16, 114);
+    color: white;
+    border-radius: 10px;
+}
+
+.border{
+    border-radius: 15px;
+}
+#card{
+    box-shadow: 2px 2px 5px #711d1d ;
+    width: 18rem;
+}
+
+@media only screen and (max-width:500px){
+  
+    #card{
+        width: 230px;
+    }
+    
+}

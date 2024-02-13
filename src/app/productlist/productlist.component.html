@@ -1,0 +1,43 @@
+
+
+
+<div class="row m-5">
+    <div class="col-lg-6">
+        <div class="m-5">
+            <img class="img-fluid" src="https://i.postimg.cc/fR2JByPr/girls.png" width="300" height="300" alt="">
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h6 class="mt-5 mb-0 ms-1">60%discount</h6>
+        <h1 class="ms-1 mt-5"><strong><i>Sale is Live</i></strong></h1>
+        <p class="me-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ad harum beatae dolorem,
+            corporis sit quasi, eligendi illo ducimus suscipit voluptatem eum aliquam consectetur dolore repellat.
+            Voluptatibus amet sunt quod?</p>
+        <button class="btn w-25">Shop Now</button>
+    </div>
+</div>
+
+
+<div class="row m-5">
+    <div class="parallax"></div>
+    <form class="mt-5 d-flex" role="search">
+        <input [(ngModel)]="productName" name="productName" class="form-control me-2" type="search"
+            placeholder="Search by name" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    
+    <div class="col-lg-12 col-md-12 col-sm-12 ms-5 mt-5 card border" *ngFor="let i of productList| searchpipe :productName :'title'" id="card" 
+       >
+        <h5 class="card-title text-center">{{i.title}}</h5>
+
+        <div class="card-body">
+           
+            <a routerLink="single/{{i.id}}" style="text-decoration: none;">
+                <img [src]=i.image class=" card-img-top" width="150" height="150" alt="no image"></a>
+            <h5 class="text-center">${{i.price}}</h5>
+            <button class="btn ms-5">Add TO Cart</button>
+          
+        </div>
+       
+    </div>
+</div>

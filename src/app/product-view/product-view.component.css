@@ -1,0 +1,20 @@
+h1{
+    font-size: 30px;
+}
+
+.c1{
+    color: green;
+}
+
+.c2{
+    color: red;
+
+}
+
+.c3{
+    color: orange;
+}
+.row{
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #FE828C;
+}

@@ -1,0 +1,23 @@
+<div class="container mt-5"  >
+    <div class="row">
+        <div class="col-lg-6  ">
+            <img class="w-75 h-50 mt-5" [src]="singleProduct.image"  alt="">
+        </div>
+    
+        <div class="col-lg-6 mt-5 ">
+            <h1><i>{{singleProduct.title}}</i></h1>
+            <h5>{{singleProduct.category}}</h5>
+            <p>{{singleProduct.description}}</p>
+            <div class="accordion-body">
+                <hr />
+                <div>
+                   
+                    <p>Rating:
+                        <span [ngClass]="singleProduct.rating.rate>=4?'c1':singleProduct.rating.rating>=3?'c3':'c2'">{{singleProduct.rating.rate}}<i
+                                class="fa-solid fa-star" ></i></span>
+                    </p>
+                </div>
+            </div>
+          
+    </div>
+</div>
